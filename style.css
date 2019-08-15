@@ -579,3 +579,89 @@ h2 {
   color: #ffffff;
 }
 
+
+
+
+
+/* style for UITITLE */
+
+.rockingred {
+  background-color: #E71C23;
+
+}
+
+.blue {
+  background-color: #192A56;
+}
+
+.green {
+  background-color: #019031;
+}
+
+.yellow {
+  background-color: #FAC42F;
+}
+ 
+ .gray {
+  background-color: #2C3335;
+ }
+
+ .random {
+  background-color: #EA7773;
+ }
+
+
+
+.HOVER {
+  --width: 100%;
+  --time: 0.7s;
+  position: relative;
+  display: inline-block;
+  padding: 1em;
+  color: white;
+  /* background: #222; */
+  overflow: hidden;
+
+}
+
+.HOVER text {
+  position: relative;
+  z-index: 5;
+  transition: color var(--time);
+}
+
+.HOVER:hover text {
+  color: #222;
+}
+.HOVER span {
+  border-radius: 100%;
+  position: absolute;
+  display: block;
+  content: "";
+  z-index: 0;
+  width: 0;
+  height: 0;
+  background: #fff;
+  transform: translate(-50%, -50%);
+  transition: width var(--time), padding-top var(--time);
+}
+
+.HOVER:hover span {
+  width: calc(var(--width)*2.25);
+  padding-top: calc(var(--width)* 2.25);
+  border-bottom: 10px solid black;
+}
+
+/* .HOVER.FLASH:hover text {
+  color: white;
+} */
+/* .HOVER.FLASH span {
+  background: #ff3b3b;
+} */
+
+.HOVER:hover {
+  /* border-bottom: 4px solid #333; */
+  border-right: 4px solid #333;
+
+  transition: .5s;
+}
